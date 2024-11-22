@@ -1,0 +1,13 @@
+body {
+    background-color:#C4D7FF;
+}
+
+.hover-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
