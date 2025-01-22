@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Header from './components/Header';
 import Movie from './components/Movie';
+import Footer from './components/Footer';
 import axios from 'axios';
 
 function App() {
@@ -72,7 +73,7 @@ function App() {
           ))
         )}
       </div>
-      <div className="d-flex justify-content-center align-items-center mt-4 mb-5">
+      <div className="buttonPagination d-flex justify-content-center align-items-center mt-4 mb-5">
         <button
           className="btn btn-dark me-2"
           onClick={() => handlePageChange(page - 1)}
@@ -82,6 +83,7 @@ function App() {
           onClick={() => handlePageChange(page + 1)}
           >Next</button>
       </div>
+      <Footer />
     </>
   );  
 }
